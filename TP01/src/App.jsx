@@ -17,11 +17,18 @@ export function Hearder(){
 }
 
 
+export function   MainContent(){
+    return(
+        <h2>Ici, nous afficherons des informations interessantes :) </h2>
+    );
+}
+
 function App() {
 
   return (
     <>
         <Hearder/>
+        <MainContent/>
     </>
   )
 }
