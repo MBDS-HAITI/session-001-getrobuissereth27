@@ -23,13 +23,24 @@ export function   MainContent(){
     );
 }
 
+export function  Footer(){
+    return(
+        <di >
+            <footer >
+                <h3>Tous droits réservés - BUISSERETH Getro</h3>
+            </footer>
+        </di>
+    )
+}
+
 function App() {
 
   return (
-    <>
+      <>
         <Hearder/>
         <MainContent/>
-    </>
+        <Footer/>
+      </>
   )
 }
 export default App
