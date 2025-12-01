@@ -33,10 +33,13 @@ export function MainContent(){
 }
 
 export function  Footer(){
+    const prenom = "BUISSERETH";
+    const nom = "Getro";
+    const annee = 2025;
     return(
         <di >
             <footer >
-                <h3>Tous droits réservés - BUISSERETH Getro</h3>
+                <h3>© {annee} - {prenom}.{nom}, Tous droits réservés.</h3>
             </footer>
         </di>
     )
