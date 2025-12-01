@@ -16,11 +16,14 @@ export function Hearder(){
     );
 }
 
+
+
+
 function App() {
 
   return (
     <>
-
+    <Hearder/>
     </>
   )
 }
