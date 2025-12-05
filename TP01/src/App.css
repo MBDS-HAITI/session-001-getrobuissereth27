@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -55,12 +54,13 @@
 }
 
 
-.page-container {
-    display: flex;
-    width: 100%;
-    margin: 50px;
-    background-color: #f0f0f0;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
+.page-container {  display: flex;
+  flex-direction: column;
+  min-height: 800vh;
+  min-width: 80vh;
+}
+
+.table-wrapper {
+  max-width: 1100px;
+  margin: 0 auto; /* centre horizontalement */
 }

@@ -1,36 +1,24 @@
-
-import './App.css'
-import {useState} from "react";
-import Content from "./components/Content.jsx";
-import {Menu} from "@mui/material";
-
-
-
-const MENU_ITEMS = [
-    { key: "notes", label: "Notes" },
-    { key: "etudiants", label: "Étudiants" },
-    { key: "matieres", label: "Matières" },
-    { key: "apropos", label: "À propos" },
-];
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import NavigationBar from "./components/Navbar";
+import Students from "./components/Students";
+import Courses from "./components/Courses";
+import Grades from "./components/Grades";
 
 function App() {
-
-    const [active, setActive] = useState(MENU_ITEMS[0].key);
-    return (
-        <>
-
-            <div className="app">
-                <aside className="sidebar">
-                    <Menu items={MENU_ITEMS} active={active} onSelect={setActive}/>
-                </aside>
-                <main className="content">
-                    <Content active={active}/>
-                </main>
-            </div>
-
-
-        </>
-    );
+  return (
+    <Router>
+      <NavigationBar />
+      <main className="page-container">
+        <Routes>
+          <Route path="/" element={<Navigate to="/students" replace />} />
+          <Route path="/students" element={<Students />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/grades" element={<Grades />} />
+        </Routes>
+      </main>
+    </Router>
+  );
 }
-export default App
+
+export default App;
