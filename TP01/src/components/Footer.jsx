@@ -1,13 +1,14 @@
+import React from "react";
+import { Container } from "react-bootstrap";
 
-export function  Footer(){
-    const prenom = "BUISSERETH";
-    const nom = "Getro";
-    const annee = 2025;
-    return(
-        <di >
-            <footer >
-                <h3>© {annee} - {prenom}.{nom}, Tous droits réservés.</h3>
-            </footer>
-        </di>
-    )
+function Footer() {
+  return (
+    <footer className="bg-dark text-light py-3 fixed-bottom">
+      <Container fluid className="text-center">
+        <small>© 2025 BUISSERETH Getro Student Management App - Tous droits réservés</small>
+      </Container>
+    </footer>
+  );
 }
+
+export default Footer;

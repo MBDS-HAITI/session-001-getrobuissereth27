@@ -4,6 +4,7 @@ import NavigationBar from "./components/Navbar";
 import Students from "./components/Students";
 import Courses from "./components/Courses";
 import Grades from "./components/Grades";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/grades" element={<Grades />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }
